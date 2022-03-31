@@ -1,17 +1,13 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom'
-import Modal from './Modal'
-import {Buffer} from 'buffer';
 
 const Movies = () => {
   const [movies, setMovies] = useState({})
   const [movie_title, setMovie_title] = useState('')
   const [page, setPage] = useState(1);
-  const [token, setToken] = useState('');
 
   const [loading, setLoading] = useState(true)
-  const [openModal, setModalopen] = useState(true)
 
   
   useEffect(() => {
@@ -135,7 +131,6 @@ const Movies = () => {
     </nav>
           </div>
         </div>
-        <Modal openModal={openModal} />
 
       </div>
     )
