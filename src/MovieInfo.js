@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from "react-router-dom";
-import { CameraIcon } from '@heroicons/react/solid'
 
 const MovieInfo = ({getMovie, movie, cast}) => {
     const id = useParams().id
