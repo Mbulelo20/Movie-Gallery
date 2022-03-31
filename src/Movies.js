@@ -34,7 +34,7 @@ const Movies = () => {
   }
   
   if(loading){
-    return <h3 className="mx-auto py-12 px-4 sm:px-6 lg:px-8 lg:py-24">Loading...</h3>
+    return <h1 className="mt-1 text-3xl leading-8 font-extrabold tracking-tight text-gray-500 sm:text-4xl" style={{marginLeft:'25em', marginTop:'10em'}}>Loading ...</h1>
   }else {
     return (
       <div className="bg-white">
